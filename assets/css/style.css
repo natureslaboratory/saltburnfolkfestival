@@ -1,0 +1,241 @@
+.c-header {
+    background-color: #e9e9e7;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.8vw 4vw;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.c-header__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.c-header__links.mobile {
+    position: fixed;
+    background-color: var(--secondary-color);
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(3rem);
+    transition: 200ms;
+}
+
+.c-header__links.mobile.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.c-header__links.mobile .c-navigation {
+    flex-direction: column;
+    gap: 2rem;
+    flex-grow: 2;
+    justify-content: start;
+    align-items: center;
+    overflow: auto;
+    max-height: 70%;
+}
+
+.c-header__links.mobile .c-navigation__wrapper {
+    display: flex;
+    flex-grow: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.c-header__links.mobile .c-navigation a {  
+    font-size: 2.5rem;
+}
+
+.c-header__links.mobile .c-socials {
+    margin-bottom: 3rem;
+    gap: 1.2rem;
+    transform: translateY(4rem);
+    transition: 400ms;
+}
+
+.c-header__links.mobile.show .c-socials {
+    margin-bottom: 3rem;
+    gap: 1.2rem;
+    transform: translateY(0);
+}
+
+.c-header__links.mobile .c-socials i {
+    font-size: 1.5rem;
+}
+
+.c-navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+.c-navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.c-header__logo {
+    max-height: 130px;
+}
+
+.c-socials {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.l-block {
+    min-height: 434px;
+    padding: 4vw;
+    background-size: cover;
+}
+
+.l-block--primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.l-block--secondary {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.l-block--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-restrict {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#hamburger_button {
+    display: none;
+}
+
+@media screen and (max-width:680px) {
+    #hamburger_button {
+        display: block;
+    }
+}
+
+.c-big-links {
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 1.3rem);
+}
+
+.c-big-links a {
+    color: #4890c7;
+    font-size: clamp(3rem, 5vw, 4rem);
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.2em;
+}
+
+.c-big-text {
+    padding: 2rem 0;
+}
+
+.c-big-text * {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 25ch;
+    margin: 0 auto;
+}
+
+.c-text-image {
+    padding: 6rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+.c-text-image img {
+    max-width: 100%;
+}
+
+.c-text-image__text * {
+    font-size: 2.4rem;
+    color: inherit;
+}
+
+.c-text-image a:last-child {
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .c-big-links {
+        padding: 17px;
+    }
+
+    .c-big-text * {
+        font-size: 2rem;
+    }
+    .c-text-image {
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1.3rem;
+    }
+
+    .c-text-image__text * {
+        font-size: 1.5rem;
+    }
+}
+
+[class*="c-animated"] {
+    transition: 750ms ease;
+}
+
+[class*="--fade"] {
+    opacity: 0;
+}
+
+[class*="--fade"].show {
+    opacity: 1;
+}
+
+[class*="--fade-down"] {
+    transform: translateY(-50px);
+}
+
+[class*="--fade-up"] {
+    transform: translateY(50px);
+}
+
+:is([class*="--fade-up"], [class*="--fade-down"]).show {
+    transform: translateY(0px);
+}
+
+[class*="--fade-left"] {
+    transform: translateX(-50px);
+}
+
+[class*="--fade-right"] {
+    transform: translateX(50px);
+}
+
+:is([class*="--fade-left"], [class*="--fade-right"]).show {
+    transform: translateX(0px);
+}
