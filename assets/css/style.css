@@ -338,6 +338,123 @@
     color: black;
 }
 
+.c-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    width: 100%;
+}
+
+.c-contact__right h2 {
+    margin-bottom: 2rem;
+}
+
+.c-contact__right a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.c-contact__right .c-socials {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.c-contact__right .c-socials i {
+    font-size: 1.2rem;
+}
+
+.c-contact__emails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.c-contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.c-form__name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "label label"
+                         "first last";
+    column-gap: 2rem;
+}
+
+.c-form__name:last-child {
+    grid-area: last;
+}
+
+.c-form__name:nth-child(2) {
+    grid-area: first;
+}
+
+.c-form__name > label {
+    grid-area: label;
+}
+
+form :is(input, textarea) {
+    padding: 0.6rem;
+    border: 1px solid rgb(182, 182, 182);
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.c-form__name-group {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.c-form__name-group label {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+:is(.c-form__group, .c-form__name) > label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+form input[type="submit"] {
+    width: auto;
+    min-width: 140px;
+    align-self: start;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .c-form__name {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .c-form__name > *:last-child {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .c-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+
 .c-big-links {
     padding: 0 8rem;
     display: flex;
