@@ -1,0 +1,101 @@
+<perch:blocks>
+    <perch:block type="text_image" label="Text Image">
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select"
+            options="primary, secondary" />">
+        <div class="l-restrict c-text-image c-animated c-animated--fade" data-animation-delay="100">
+            <div class="c-text-image__text">
+                <perch:content id="textImageContent" label="Content" type="textarea" editor="redactor" html />
+            </div>
+            <img src="<perch:content id="image" label="Image" type="image" width="600" crop />" alt="Dancing">
+        </div>
+        </section>
+    </perch:block>
+
+    <perch:block type="feature_text" label="Feature Text">
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select" options="primary, secondary" />">
+        <div class="l-restrict c-big-text">
+            <perch:content id="text" label="Content" type="textarea" editor="redactor" html />
+            <perch:repeater label="Icons" type="icons">
+                <perch:before><div class="c-big-text__icons"></perch:before>
+                    <div class="c-icon-background">
+                        <a href="<perch:content id="iconLink" label="Link" type="text" />">
+                            <i class="fab fa-<perch:content id="iconType" label="Icon" type="select" options="facebook, twitter, instagram, youtube" /><perch:if id="iconType" value="facebook">-f</perch:if>" ></i>
+                        </a>
+                    </div>
+                <perch:after></div></perch:after>
+            </perch:repeater>
+        </div>
+        </section>
+    </perch:block>
+
+    <perch:block type="homeNavigationFeature" label="Home Feature Links">
+        <section class="l-block" style="background-image: url('<perch:content type="image" id="backgroundImage" label="Background Image" width="1280" crop />')">
+            <ul class="l-restrict c-big-links">
+                <perch:repeater type="links" label="Links">
+                    <li>
+                        <a href="<perch:content type="text" label="Link" id="link" />"><perch:content id="linkText" label="Label" type="text" /></a>
+                    </li>
+                </perch:repeater>
+            </ul>
+        </section>
+    </perch:block>
+
+    <perch:block type="text" label="Text">
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select" options="primary, secondary" />">
+            <div class="l-restrict l-restrict--narrow c-text">
+                <perch:content type="textarea" label="Text" editor="redactor" html id="text" />
+            </div>
+        </section>
+    </perch:block>
+
+    <perch:block type="team" label="Team">
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select" options="primary, secondary" />">
+            <div class="l-restrict l-restrict--narrow c-team">
+                <h2 class="c-team__title"><perch:content id="title" label="Title" type="text" /></h2>
+                <perch:repeater type="teamList" label="Team Members">
+                    <perch:before><div class="c-team__list"></perch:before>
+                        <div class="c-team__member">
+                            <h3><perch:content id="name" label="Name" type="text" /></h3>
+                            <p><perch:content id="role" label="Role" type="text" /></p>
+                        </div>
+                    <perch:after></div></perch:after>
+                </perch:repeater>
+            </div>
+        </section>
+    </perch:block>
+
+    <perch:block type="partners" label="Partners">
+        
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select" options="primary, secondary" />">
+            <div class="l-restrict c-partners">
+                <h2>Our Partners</h2>
+                <img src="<perch:content id="partnersImage" label="Partners Image" type="image" width="1500" crop />">
+            </div>
+        </section>
+    </perch:block>
+
+    <perch:block type="photo" label="Photo Feature">
+        <section class="l-block" 
+            style="
+            background-image: url('<perch:content id="image" label="Image" type="image" width="1280" crop />'); 
+            height: 600px; 
+            background-position: <perch:content id="horizontalOffset" label="Horizontal Position" type="select" options="0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%" /> <perch:content id="verticalOffset" label="Vertical Position" type="select" options="0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%" /> "
+        >
+            <div class="l-block__overlay"></div>
+        </section>
+    </perch:block>
+
+    <perch:block type="artists" label="Artists">
+        <section class="l-block l-block--<perch:content id="blockColour" label="Block Colour" type="select" options="primary, secondary" />">
+            <div class="l-restrict c-artists">
+                <perch:repeater label="Artists" type="artistsRepeater">
+                    <a class="c-artist" href="<perch:content id="link" label="Link" type="text" />">
+                        <img src="<perch:content id="image" type="image" width="400" height="400" crop label="Image" />">
+                        <small><perch:content type="text" label="Name" id="name" /></small>
+                    </a>
+                </perch:repeater>
+            </div>
+        </section>
+    </perch:block>
+
+</perch:blocks>
