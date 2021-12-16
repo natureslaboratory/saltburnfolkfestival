@@ -16,7 +16,7 @@
 <body>
     <header class="c-header" id="header">
         <a href="/"><img class="c-header__logo" src="/assets/images/sff_logo.png" alt="Saltburn Folk Festival Logo"></a>
-        <button id="hamburger_button">Menu</button>
+        <button id="hamburger_button"><i class="fas fa-bars"></i></button>
         <div class="c-header__links" id="navigation">
             <div class="c-navigation__wrapper">
                 <?php perch_pages_navigation() ?>

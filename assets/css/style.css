@@ -150,6 +150,14 @@
 
 #hamburger_button {
     display: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+#hamburger_button i {
+    font-size: 1.3rem;
+    color: rgb(94 94 94);
 }
 
 @media screen and (max-width:680px) {
