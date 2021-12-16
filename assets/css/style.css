@@ -277,7 +277,7 @@
     align-items: center;
 }
 
-.c-full-artist__overlay-text > * + * {
+:is(.c-full-artist__overlay-text, .c-full-artist__text) > * + * {
     margin-top: 1em;
 }
 
