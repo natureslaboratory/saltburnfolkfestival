@@ -220,9 +220,15 @@
 
 .c-artists {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
     gap: 2rem;
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .c-artists {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr));
+    }
 }
 
 .c-artists a {
@@ -235,7 +241,7 @@
     gap: 0.5rem;
 }
 
-.c-artists a.c-artist small {
+.c-artists a.c-artist .c-artist__label {
     color: black;
 }
 
