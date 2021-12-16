@@ -1,0 +1,22 @@
+<section class="l-block l-block--secondary">
+    <div class="l-restrict c-full-artist">
+        <div class="c-full-artist__image-container">
+            <img src="<perch:content id="artistImage" label="Image" type="image" width="1280" crop />">
+            <perch:if exists="artistOverlay">
+                <div class="c-full-artist__overlay">
+                    <div class="c-full-artist__overlay-text">
+                        <perch:content id="artistOverlay" label="Overlay Text" type="textarea" editor="redactor" html />
+                    </div>
+                    <perch:repeater type="buttons" label="Buttons">
+                        <perch:before><div class="c-full-artist__overlay-buttons"></perch:before>
+                            <button href="<perch:content id="buttonLink" type="text" label="Button Link" />"><perch:content id="buttonText" label="Button Text" type="text" /></button>
+                        <perch:after></div></perch:after>
+                    </perch:repeater>
+                </div>
+            </perch:if>
+        </div>
+        <div class="c-full-artist__text">
+            <perch:content id="text" type="textarea" editor="redactor" label="Text" html />
+        </div>
+    </div>
+</section>

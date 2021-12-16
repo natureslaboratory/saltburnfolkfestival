@@ -11,6 +11,8 @@ function offsetHeader() {
     body.style.paddingTop = `${headerHeight}px`;
 
 
+    console.log(headerHeight);
+    
     if (window.innerWidth < 680) {
         setNavMobile(headerHeight);
     } else {
@@ -48,6 +50,7 @@ hamburgerButton.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", offsetHeader);
+document.addEventListener("load", offsetHeader);
 window.addEventListener("resize", offsetHeader);
 
 
