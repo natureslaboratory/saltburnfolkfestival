@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sbfolkfestival/staging.saltburnfolkfestival.com/
+    - /bin/cp -R * $DEPLOYPATH
