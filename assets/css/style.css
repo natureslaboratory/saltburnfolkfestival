@@ -225,9 +225,14 @@
     width: 100%;
 }
 
+.c-artists a {
+    color: black;
+}
+
 @media screen and (max-width: 600px) {
     .c-artists {
         grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr));
+        gap: 1rem;
     }
 }
 
