@@ -244,6 +244,7 @@
     flex-direction: column;
     gap: clamp(1rem, 2vw, 1.3rem);
     line-height: clamp(2.4rem, 4vw, 3.6rem);
+    width: 100%;
 }
 
 .c-big-links a {
