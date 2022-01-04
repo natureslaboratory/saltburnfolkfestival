@@ -8,7 +8,7 @@
 	?>
 	<div class="l-block">
 		<div class="text l-restrict c-tickets">
-			<form method="post" action="/tickets/cart/" class="c-form">
+			<form method="post" action="/tickets/cart" class="c-form">
 				<div class="c-tickets__list">
 					<?php simple_tickets(); ?>
 				</div>
@@ -28,7 +28,7 @@
 								</div>
 								<div class="c-form__group">
 									<label>Landline Phone</label>
-									<input type="text" name="landline" value="" required>
+									<input type="text" name="landline" value="">
 								</div>
 							</div>
 							<div class="c-form__group">
