@@ -95,6 +95,11 @@
     font-family: Oswald, sans-serif;
 }
 
+.c-navigation a.selected {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .c-header__logo {
     max-height: 130px;
 }
@@ -224,8 +229,9 @@
 }
 
 .c-team__title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
+    font-size: 3rem;
 }
 
 .c-full-artist {
@@ -312,6 +318,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.c-partners img {
+    max-width: 100%;
 }
 
 .c-artists {

@@ -55,3 +55,24 @@ window.addEventListener("resize", offsetHeader);
 
 
 console.log("loaded");
+
+
+const navBar = document.getElementsByClassName("c-navigation")[0];
+const navLinks = Array.from(navBar.getElementsByTagName("a"));
+const splitUrl = window.location.pathname.split("/");
+console.log(splitUrl);
+const urlParts = splitUrl.filter(p => p);
+console.log(urlParts);
+
+navLinks.forEach(l => {
+    if (l.href == "/" && window.location.pathname == "/") {
+        l.classList.add("selected");
+        return;
+    }
+
+    const splitHref = l.href.split("/").filter(p => p);
+    if (urlParts.length > 0 && (urlParts[0] == splitHref[0])) {
+        l.classList.add("selected");
+        return;
+    }
+})
