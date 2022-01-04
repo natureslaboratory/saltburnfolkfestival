@@ -38,12 +38,14 @@
 
 .c-header__links.mobile .c-navigation {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     flex-grow: 2;
     justify-content: start;
     align-items: center;
     overflow: auto;
     max-height: 70%;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .c-header__links.mobile .c-navigation__wrapper {
@@ -56,7 +58,7 @@
 }
 
 .c-header__links.mobile .c-navigation a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: black;
 }
 
