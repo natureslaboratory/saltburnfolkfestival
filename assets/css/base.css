@@ -5,6 +5,16 @@
     src: url("/assets/fonts/Oswald-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: GT Alpina Bold;
+    src: url("/assets/fonts/GT\ Alpina/GT-Alpina-Condensed-Bold.ttf")
+}
+
+@font-face {
+    font-family: GT Alpina Regular;
+    src: url("/assets/fonts/GT\ Alpina/GT-Alpina-Standard-Regular.ttf");
+}
+
 html, body, div, pre, form, fieldset, input, h1, h2, h3, h4, h5, h6, p, textarea, ul, ol, li, dl, dt, dd, blockquote, th, td,
 /* HTML 5 elements */
 
@@ -14,7 +24,7 @@ abbr, article, aside, audio, canvas, details, figcaption, figure, footer, header
     box-sizing: border-box;
     font-family: var(--default-font);
     box-sizing: border-box;
-    font-family: Oswald, sans-serif;
+    font-family: GT Alpina Bold, serif;
 }
 
 html {

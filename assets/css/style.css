@@ -1,5 +1,5 @@
 .c-header {
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     padding: 1.8vw 4vw;
@@ -81,10 +81,18 @@
     gap: 1.5rem;
 }
 
+.c-navigation__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .c-navigation a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-family: Oswald, sans-serif;
 }
 
 .c-header__logo {
@@ -101,7 +109,7 @@
 .c-socials i {
     font-size: 1.05rem;
     line-height: 1.05rem;
-    color: black;
+    color: white;
 }
 
 .l-block {
@@ -176,7 +184,7 @@
 
 .c-text p {
     max-width: 100ch;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .c-text h1 {
