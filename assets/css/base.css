@@ -63,8 +63,8 @@ caption, th {
     --size-900: 4.2rem;
     --primary-color: #4890c7;
     --secondary-color: #e9e9e7;
-    --header-font: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-    --default-font: Nunito, sans-serif;
+    --header-font: GT Alpina Bold;
+    --default-font: GT Alpina Bold, sans-serif;
     --border-radius-large: 25px;
     --border-radius-small: 10px;
     --box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.103);
