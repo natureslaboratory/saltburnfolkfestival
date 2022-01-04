@@ -177,7 +177,7 @@
 
 #hamburger_button i {
     font-size: 2rem;
-    color: rgb(94 94 94);
+    color: white;
 }
 
 @media screen and (max-width:680px) {
