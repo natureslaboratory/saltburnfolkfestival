@@ -594,6 +594,15 @@ form input[type="submit"] {
 }
 
 
+@media screen and (max-width: 660px) {
+    .c-cart__top, .c-cart__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
 .c-big-links {
     padding: 0 8rem;
     display: flex;
