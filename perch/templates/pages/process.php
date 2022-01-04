@@ -54,7 +54,7 @@
 	
 	<h2>Ready to Pay?</h2>
 	<form action="https://secure-test.worldpay.com/wcc/purchase" method=POST>
-		<input type="hidden" name="testMode" value="0">
+		<input type="hidden" name="testMode" value="100">
 		<input type="hidden" name="instId" value="1372264">
 		<input type="hidden" name="cartId" value="<?php echo $id; ?>">
 		<input type="hidden" name="amount" value="<?php echo $dueNow; ?>">
