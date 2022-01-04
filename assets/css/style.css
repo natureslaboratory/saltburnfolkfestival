@@ -57,6 +57,7 @@
 
 .c-header__links.mobile .c-navigation a {
     font-size: 2.5rem;
+    color: black;
 }
 
 .c-header__links.mobile .c-socials {
@@ -74,6 +75,7 @@
 
 .c-header__links.mobile .c-socials i {
     font-size: 1.5rem;
+    color: black;
 }
 
 .c-navigation {
@@ -392,7 +394,7 @@
     gap: 0.6rem;
 }
 
-.c-contact__form {
+.c-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -474,6 +476,92 @@ form input[type="submit"] {
         flex-direction: column;
         gap: 2rem;
     }
+}
+
+.c-tickets {
+    width: 100%;
+}
+
+.c-tickets__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px), 1fr));
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .c-tickets__list {
+        grid-template-columns: 1fr;
+        width: min(500px, 100%);
+        margin: 0 auto;
+    }
+}
+
+.c-ticket {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-ticket :not(.c-form__group) + .c-form__group {
+    margin-top: auto;
+}
+
+.c-ticket .c-form__group + .c-form__group {
+    margin-top: 1rem;
+}
+
+.c-ticket .c-form__group + :not(.c-form__group) {
+    margin-top: 1.3rem;
+}
+
+.c-ticket > h3 + p {
+    margin-bottom: 1.2rem;
+}
+
+.c-ticket h3 {
+    margin-bottom: 1.3rem;
+    font-size: 2.5rem;
+}
+
+.c-ticket .c-form__group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.c-ticket .c-form__group label {
+    margin: 0;
+}
+
+.c-customer-details {
+    width: min(500px, 100%);
+    margin: 0 auto;
+}
+
+.c-customer-details h2 {
+    margin-bottom: 1.5rem;
+}
+
+.c-customer-details__form {
+    display: grid;
+}
+
+.c-customer-details input {
+    width: 100%;
+}
+
+.c-customer-details .c-form__group {
+    margin-bottom: 1rem;
+}
+
+.c-customer-details__phones {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.c-customer-details .c-form__group {
+    width: 100%;
 }
 
 
