@@ -114,8 +114,13 @@
 .c-socials i {
     font-size: 1.05rem;
     line-height: 1.05rem;
+    color: black;
+}
+
+.c-header .c-socials i {
     color: white;
 }
+
 
 .l-block {
     min-height: 434px;
