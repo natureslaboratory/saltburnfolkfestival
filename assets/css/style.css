@@ -570,17 +570,19 @@ form input[type="submit"] {
     gap: 1rem;
 }
 
-.c-cart__top {
+.c-cart__top, .c-cart__bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.c-cart__top {
     border-bottom: 1px solid #afc0cc;
     padding: 3rem 0;
     margin-bottom: 2rem;
 }
 
 .c-cart__bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding-bottom: 3rem;
 }
 
