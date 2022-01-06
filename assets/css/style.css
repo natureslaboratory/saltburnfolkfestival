@@ -499,9 +499,27 @@ form input[type="submit"] {
     }
 }
 
+.c-ticket__wrapper {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 150px 1fr;
+}
+
+.c-ticket__wrapper .c-ticket {
+    padding: 0.5rem 0;
+}
+
+.c-ticket__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: rgb(245, 245, 245);
+}
+
 .c-ticket {
     display: flex;
     flex-direction: column;
+    grid-column-start: 2;
 }
 
 .c-ticket :not(.c-form__group) + .c-form__group {

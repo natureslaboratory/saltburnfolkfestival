@@ -1,39 +1,46 @@
-<div class="c-ticket">
-<h3><perch:st id="eventName" /></h3>
-<p><perch:st id="eventDescription" /></p>
-<perch:if id="concessionPrice" value="0.00" match="neq">
-<div class="c-form__group">
-	<label>Standard Ticket Price &pound;<perch:st id="ticketPrice" /></label>
-	<select name="ticketID_standard_<perch:st id="ticketID" />">
-		<option value="0">0</option>
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-	</select>
-</div>
-<div class="c-form__group">
-	<label>Young Person Ticket (age 10-16) &pound;<perch:st id="concessionPrice" /></label>
-	<select name="ticketID_concession_<perch:st id="ticketID" />">
-		<option value="0">0</option>
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-	</select>
-</div>
-<p><small>Children aged 0-9 free</small></p>
-<perch:else/>
-<label>Price &pound;<perch:st id="ticketPrice" /></label>
-<select name="ticketID_standard_<perch:st id="ticketID" />" <perch:if id="campingOptions" value="1" match="eq">id="pitches"</perch:if>>
-	<option value="0">0</option>
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-</select>
-</perch:if>
-<perch:if id="campingOptions" value="1" match="eq">
-	<div id="options"></div>
-</perch:if>
+<div class="c-ticket__wrapper">
+	<perch:if exists="ticketImage">
+		<img class="c-ticket__image" src="<perch:st id="ticketImage" />" alt="ticket image">
+	<perch:else>
+		<div class="c-ticket__image c-ticket__image--placeholder"></div>
+	</perch:if>
+	<div class="c-ticket">
+		<h3><perch:st id="eventName" /></h3>
+		<p><perch:st id="eventDescription" /></p>
+		<perch:if id="concessionPrice" value="0.00" match="neq">
+			<div class="c-form__group">
+				<label>Standard Ticket Price &pound;<perch:st id="ticketPrice" /></label>
+				<select name="ticketID_standard_<perch:st id="ticketID" />">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="c-form__group">
+				<label>Young Person Ticket (age 10-16) &pound;<perch:st id="concessionPrice" /></label>
+				<select name="ticketID_concession_<perch:st id="ticketID" />">
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<p><small>Children aged 0-9 free</small></p>
+		<perch:else/>
+			<label>Price &pound;<perch:st id="ticketPrice" /></label>
+			<select name="ticketID_standard_<perch:st id="ticketID" />" <perch:if id="campingOptions" value="1" match="eq">id="pitches"</perch:if>>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</perch:if>
+		<perch:if id="campingOptions" value="1" match="eq">
+			<div id="options"></div>
+		</perch:if>
+	</div>
 </div>
