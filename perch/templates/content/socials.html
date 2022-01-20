@@ -1,7 +1,7 @@
-<div class="c-socials" >
+<div class="c-socials <perch:if exists="type"><perch:content id="type" type="hidden" /></perch:if>" >
     <perch:blocks>
         <perch:block type="icon" label="Icon">
-            <a href="<perch:content id="iconLink" label="Link" type="text" />">
+            <a href="<perch:content id="iconLink" label="Link" type="text" />" target="_blank">
                 <i class="fab fa-<perch:content id="iconType" label="Icon" type="select" options="facebook, twitter, instagram, youtube" /><perch:if id="iconType" value="facebook">-f</perch:if>" ></i>
             </a>
         </perch:block>
