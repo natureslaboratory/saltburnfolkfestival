@@ -737,6 +737,7 @@ form input[type="submit"] {
 
 .c-page {
     flex-grow: 2;
+    background-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 600px) {
