@@ -1,5 +1,6 @@
 
 
+</div>
 <footer class="l-block l-block--secondary">
     <div class="l-restrict c-footer">
         <!-- <div class="c-socials c-footer__socials">

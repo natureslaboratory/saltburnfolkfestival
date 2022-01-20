@@ -735,6 +735,10 @@ form input[type="submit"] {
     gap: 0.5rem;
 }
 
+.c-page {
+    flex-grow: 2;
+}
+
 @media screen and (max-width: 600px) {
     .c-big-links {
         padding: 17px;

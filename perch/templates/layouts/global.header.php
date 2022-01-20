@@ -31,3 +31,4 @@
             <?php perch_content_custom("Social Icons") ?>
         </div>
     </header>
+    <div class="c-page">
