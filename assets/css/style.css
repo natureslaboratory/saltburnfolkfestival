@@ -729,6 +729,11 @@ form input[type="submit"] {
 .c-footer a {
     margin-top: 1.3rem;
 }
+.c-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 
 @media screen and (max-width: 600px) {
     .c-big-links {
