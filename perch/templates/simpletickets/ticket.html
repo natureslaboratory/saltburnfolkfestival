@@ -10,7 +10,7 @@
 	<option value="3">3</option>
 	<option value="4">4</option>
 </select>
-<label>Young Person Ticket (age 10-16) &pound;<perch:st id="concessionPrice" /></label>
+<label>Young Person Ticket (age 9-16) &pound;<perch:st id="concessionPrice" /></label>
 <select name="ticketID_concession_<perch:st id="ticketID" />">
 	<option value="0">0</option>
 	<option value="1">1</option>
@@ -18,7 +18,6 @@
 	<option value="3">3</option>
 	<option value="4">4</option>
 </select>
-<p><small>Children aged 0-9 free</small></p>
 <perch:else/>
 <label>Price &pound;<perch:st id="ticketPrice" /></label>
 <select name="ticketID_standard_<perch:st id="ticketID" />" <perch:if id="campingOptions" value="1" match="eq">id="pitches"</perch:if>>
