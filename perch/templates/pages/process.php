@@ -53,8 +53,8 @@
 	<p><strong>Payable at the Box Office on Arrival:</strong> &pound;<?php echo $dueThen; ?></p>
 	
 	<h2>Ready to Pay?</h2>
-	<form action="https://secure-test.worldpay.com/wcc/purchase" method=POST>
-		<input type="hidden" name="testMode" value="100">
+	<form action="https://secure.worldpay.com/wcc/purchase" method=POST>
+		<input type="hidden" name="testMode" value="0">
 		<input type="hidden" name="instId" value="1372264">
 		<input type="hidden" name="cartId" value="<?php echo $id; ?>">
 		<input type="hidden" name="amount" value="<?php echo $dueNow; ?>">
