@@ -21,7 +21,10 @@ module.exports = {
                         plugins: ['@babel/plugin-proposal-class-properties']
                     }
                 }
-            }
+            },
+            {
+                test: /\.tsx?$/, loader: "ts-loader"
+            },
         ]
     }
 }

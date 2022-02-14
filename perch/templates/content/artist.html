@@ -9,7 +9,8 @@
                     </div>
                     <perch:repeater type="buttons" label="Buttons">
                         <perch:before><div class="c-full-artist__overlay-buttons"></perch:before>
-                            <a href="<perch:content id="buttonLink" type="text" label="Button Link" />"><button style="cursor: pointer;"><perch:content id="buttonText" label="Button Text" type="text" /></button></a>
+                            <perch:content id="newTab" type="checkbox" suppress label="Open in new tab?" value="_blank" />
+                            <a href="<perch:content id="buttonLink" type="text" label="Button Link" order="2" />" target="<perch:content id="newTab" />"><button style="cursor: pointer;"><perch:content id="buttonText" label="Button Text" type="text" order="1" /></button></a>
                         <perch:after></div></perch:after>
                     </perch:repeater>
                 </div>

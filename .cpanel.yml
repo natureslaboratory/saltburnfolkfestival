@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/sbfolkfestival/staging.saltburnfolkfestival.com/
     - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/sbfolkfestival/public_html/
+    - /bin/cp -R * $DEPLOYPATH

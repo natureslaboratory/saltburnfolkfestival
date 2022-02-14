@@ -1,0 +1,6 @@
+<perch:repeater>
+    <perch:before><div class="c-legal"></perch:before>
+        <perch:content id="newTab" type="checkbox" suppress label="Open in new tab?" value="_blank" />
+        <a class="c-legal__link" href="<perch:content id="link" type="text" label="Link" order="2" />" target="<perch:content id="newTab" />"><small><perch:content id="linkText" label="Label" type="text" order="1" /></small></a>
+    <perch:after></div></perch:after>
+</perch:repeater>

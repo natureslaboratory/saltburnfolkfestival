@@ -1,8 +1,9 @@
-<div class="c-socials" >
+<div class="c-socials <perch:if exists="type"><perch:content id="type" type="hidden" /></perch:if>" >
     <perch:blocks>
         <perch:block type="icon" label="Icon">
-            <a href="<perch:content id="iconLink" label="Link" type="text" />">
-                <i class="fab fa-<perch:content id="iconType" label="Icon" type="select" options="facebook, twitter, instagram, youtube" /><perch:if id="iconType" value="facebook">-f</perch:if>" ></i>
+            <perch:content id="newTab" type="checkbox" suppress label="Open in new tab?" value="_blank" />
+            <a href="<perch:content id="iconLink" label="Link" type="text" order="2" />" target="<perch:content id="newTab" />">
+                <i class="fab fa-<perch:content order="1" id="iconType" label="Icon" type="select" options="facebook, twitter, instagram, youtube" /><perch:if id="iconType" value="facebook">-f</perch:if>" ></i>
             </a>
         </perch:block>
     </perch:blocks>
