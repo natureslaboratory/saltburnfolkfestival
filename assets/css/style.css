@@ -721,7 +721,7 @@ form input[type="submit"] {
     font-size: 1.2rem;
 }
 
-.c-footer small {
+.c-footer p {
     opacity: 0.8;
     margin-bottom: 0.5rem;
 }
