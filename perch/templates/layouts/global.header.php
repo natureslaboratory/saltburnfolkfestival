@@ -10,8 +10,8 @@
     <title><?php perch_pages_title(); ?></title>
     <?php perch_page_attributes(); ?>
     <script src="https://kit.fontawesome.com/5bcd9efe81.js" crossorigin="anonymous" type="module"></script>
-    <link rel="stylesheet" type="text/css" href="/assets/css/base.css?v=<? rand() ?>">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=<? rand() ?>">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css?v=<?= rand() ?>">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=<?= rand() ?>">
 </head>
 <body>
     <header class="c-header" id="header">
